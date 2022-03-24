@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GamaHub | Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/contact.js" defer ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./img/game-hub-Logo.png" alt="logo of gamehub" />
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html">Register</a></li>
+      </ul>
+    </nav>
+    <body>
+       <div class="success-message">
+        <h1>Thanks for submitting!</h1>
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="image"></div>
+        </div>
+        <form id="form">
+          <div>
+            <label for="name">Name</label>
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nsebonkili"
+              required
+            />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-circle-check success-icon"></i>
+            <div class="error"></div>
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <i class="fa-solid fa-book"></i>
+            <input
+              type="subject"
+              name="subject"
+              id="subject"
+              placeholder="JavaScript"
+              minlength="10"
+            />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-circle-check success-icon"></i>
+            <div class="error"></div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <i class="far fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Nsebo@gmail.com"
+            />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-circle-check success-icon"></i>
+            <div class="error"></div>
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <i class="fa-solid fa-address-book"></i>
+            <textarea
+              name="address"
+              id="address"
+              placeholder="What's your address?"
+              minlength="25"
+            ></textarea>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-circle-check success-icon"></i>
+            <div class="error"></div>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </body>
+  </html>

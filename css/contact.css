@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@ 400;700&display=swap');
+
+:root {
+  --border: #c4c4c4;
+  --background: #042544;
+  --white: #fff;
+  --light-blue: #11b9de;
+  --green: #008000;
+  --red: #ff0000;
+  --box-shadow: #0000001a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.success-message {
+  width: 50vw;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  text-align: center;
+  display: none;
+}
+.success-message.success {
+  display: block;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+  width: 85vw;
+  margin: 1rem auto;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+.image {
+  background-image: url('/img/contact-image.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+}
+.text {
+  text-align: center;
+  color: var(--white);
+  font-size: 18px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+form > div > input,
+textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid var(--border);
+  padding: 0 30px;
+}
+
+/*input {
+  border: #008000 1px solid;
+}*/
+
+textarea i {
+  padding: 15px;
+  font-size: 50px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+input:focus {
+  border: 2px solid var(--background);
+}
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+.failure-icon,
+.error {
+  color: var(--red);
+}
+.success-icon {
+  color: var(--green);
+}
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+button {
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background-color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px var(--box-shadow);
+  transition: all 0.1s ease;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  form,
+  .content {
+    width: 100% !important;
+  }
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    padding: 20px;
+  }
+}

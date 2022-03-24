@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="divide-screen">
+      <div class="left-hand"></div>
+      <div class="right-hand">
+        <form>
+          <section class="log">
+            <h2>Log In</h2>
+          </section>
+          <div class="input-contain email">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div class="input-contain password">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Must be at least 6 letters"
+            />
+            <i class="far fa-eye-slash"></i>
+          </div>
+          <button class="login-btn" type="submit">Log In</button>
+          <section class="copy legal">
+            <p><span class="pw">Forgotten your password?</span></p>
+            <p>
+              <span class="pw"
+                >New Member?
+                <a href="signup.html">SignUp</a>
+              </span>
+            </p>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

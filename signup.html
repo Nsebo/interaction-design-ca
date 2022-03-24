@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <title>Sign up Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="split-screen">
+      <div class="left">
+        <section class="copy">
+          <h1>Explore your Gaming Side</h1>
+          <p>Over 1000 games to be installed</p>
+        </section>
+      </div>
+      <div class="right">
+        <form>
+          <section class="copy">
+            <h2>Sign up</h2>
+            <div class="login-container">
+              <p>
+                Already have an account?
+                <a href="login.html"> <strong>Log In</strong></a>
+              </p>
+            </div>
+          </section>
+          <div class="input-container name">
+            <label for="fname">Full Name</label>
+            <input id="fname" name="fname" type="text" />
+          </div>
+          <div class="input-container email">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div class="input-container password">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Must be at least 6 letters"
+            />
+            <i class="far fa-eye-slash"></i>
+          </div>
+
+          <div class="input-container cta">
+            <label class="checkbox-container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Sign Up for email updates.
+            </label>
+          </div>
+          <button class="signup-btn" type="submit">Sign Up</button>
+          <section class="copy legal">
+            <p>
+              <span class="small"
+                >By continuing, you agree to accept our <br /><a href="">
+                  Privacy policy</a
+                >&amp; <a href="#"> Terms and Condition</a></span
+              >
+            </p>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
