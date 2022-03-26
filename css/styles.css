@@ -43,11 +43,7 @@ a {
 }
 
 header {
-  background-image: linear-gradient(
-      rgba(89, 95, 98, 0.7),
-      rgba(107, 114, 117, 0.5)
-    ),
-    url(../img/game-hub.png);
+  background-image: url(../img/game-hub.png);
   background-size: cover;
   background-position-y: center;
   height: 85vh;
