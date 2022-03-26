@@ -141,10 +141,6 @@ function deleteButtons() {
         .trim()
         .toLowerCase()
         .replace(/ /g, '');
-      //console.log(productName);
-      //console.log(
-      // cartItems[productName].name + ' ' + cartItems[productName].inCart
-      //);
       localStorage.setItem(
         'cartNumbers',
         productNumbers - cartItems[productName].inCart

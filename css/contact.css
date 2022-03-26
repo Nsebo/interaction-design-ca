@@ -4,37 +4,20 @@
   --border: #c4c4c4;
   --background: #042544;
   --white: #fff;
+  --black: #000;
+  --dark-grey: #a9a9a9;
   --light-blue: #11b9de;
   --green: #008000;
   --red: #ff0000;
   --box-shadow: #0000001a;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-.success-message {
-  width: 50vw;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: var(--light-blue);
-  color: var(--white);
-  text-align: center;
-  display: none;
-}
-.success-message.success {
-  display: block;
-}
+
 .container {
   display: flex;
   flex-direction: row;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
-  width: 85vw;
-  margin: 1rem auto;
+  width: 80vw;
+  margin: 3rem auto;
 }
 .content {
   display: flex;
@@ -45,11 +28,12 @@ body {
   padding: 10px 20px;
 }
 .image {
-  background-image: url('/img/contact-image.png');
+  background-image: url('/img/login-img.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 100%;
+  border-radius: 1rem;
 }
 .text {
   text-align: center;
@@ -73,11 +57,6 @@ textarea {
   border: 2px solid var(--border);
   padding: 0 30px;
 }
-
-/*input {
-  border: #008000 1px solid;
-}*/
-
 textarea i {
   padding: 15px;
   font-size: 50px;
@@ -93,7 +72,7 @@ form div {
 input:focus {
   border: 2px solid var(--background);
 }
-form div i {
+form div ion-icon {
   position: absolute;
   padding: 10px;
 }
@@ -117,10 +96,10 @@ button {
   margin-top: 15px;
   width: 100%;
   height: 45px;
-  background-color: var(--light-blue);
-  border: 2px solid var(--light-blue);
+  background-color: var(--dark-grey);
+  border: 2px solid var(--white);
   border-radius: 8px;
-  color: var(--white);
+  color: var(--black);
   font-size: 20px;
   cursor: pointer;
   box-shadow: 2px 2px 4px var(--box-shadow);

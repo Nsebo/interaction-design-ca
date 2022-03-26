@@ -230,6 +230,13 @@ label {
   background: #2c4893;
   cursor: pointer;
 }
+.back {
+  background-color: #2c4893;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+}
 @media screen and (min-width: 900px) {
   .divide-screen {
     flex-direction: row;

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+:root {
+  --border: #c4c4c4;
+  --background: #fff;
+  --white: #fff;
+  --royal-blue: #4169e1;
+  --dark-grey: #a9a9a9;
+  --blue: #0000ff;
+  --box-shadow: #0000001a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +19,7 @@
 header {
   height: 150px;
   position: relative;
+  margin-bottom: 1rem;
 }
 .overlay {
   position: absolute;
@@ -43,7 +54,7 @@ nav li span {
 }
 li a {
   padding: 5px;
-  background-color: #fff;
+  background-color: var(--white);
   text-decoration: none;
 }
 .cart ion-icon {
@@ -52,8 +63,8 @@ li a {
   padding-right: 5px;
 }
 .cart a {
-  background-color: royalblue;
-  color: #fff;
+  background-color: var(--royal-blue);
+  color: var(--white);
   cursor: pointer;
   text-decoration: none;
 }
@@ -69,17 +80,15 @@ li a {
   position: relative;
   overflow: hidden;
 }
-
 .add-cart {
   position: absolute;
   width: 100%;
-  background-color: darkgrey;
+  background-color: var(--dark-grey);
   transition: all 0.3s ease-in-out;
   opacity: 0;
   cursor: pointer;
   text-align: center;
 }
-
 .image:hover .cart1,
 .image:hover .cart2,
 .image:hover .cart3,
@@ -100,7 +109,7 @@ li a {
 }
 .products-container ion-icon {
   font-size: 25px;
-  color: blue;
+  color: var(--blue);
   margin: 10px 10px;
   cursor: pointer;
 }
@@ -115,7 +124,6 @@ li a {
 .product-title {
   width: 45%;
 }
-
 .price {
   width: 15%;
   border-bottom: 1px solid lightgray;
@@ -142,7 +150,6 @@ li a {
   padding: 10px 0;
   border-bottom: 1px solid lightgray;
 }
-
 .product ion-icon {
   cursor: pointer;
 }
@@ -154,7 +161,6 @@ li a {
 .products img {
   width: 75px;
 }
-
 .basketTotalContainer {
   display: flex;
   justify-content: flex-end;

@@ -157,6 +157,14 @@ label {
   background: #2c4893;
   cursor: pointer;
 }
+
+.back {
+  background-color: #2c4893;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 5rem;
+}
 @media screen and (min-width: 900px) {
   .split-screen {
     flex-direction: row;
