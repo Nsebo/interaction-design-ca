@@ -22,40 +22,66 @@
     <title>Login Page || GameHub</title>
   </head>
   <body>
-    <div class="divide-screen">
-      <div class="left-hand"></div>
-      <div class="right-hand">
-        <form>
-          <section class="log">
-            <h2>Log In</h2>
-          </section>
-          <div class="input-contain email">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" />
-          </div>
-          <div class="input-contain password">
-            <label for="password">Password</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              placeholder="Must be at least 6 letters"
-            />
-            <i class="far fa-eye-slash"></i>
-          </div>
-          <button class="login-btn" type="submit">Log In</button>
-          <section class="copy legal">
-            <p><span class="pw">Forgotten your password?</span></p>
-            <p>
-              <span class="pw"
-                >New Member?
-                <a href="signup.html">SignUp</a>
-              </span>
-            </p>
-          </section>
-          <a class="back" href="index.html">Back to home</a>
-        </form>
+    <body>
+      <div class="thanks">
+        <h1>Thanks for signing up.</h1>
+        <p>Check your email for further information</p>
+        <a href="./index.html">Click here to go back home</a>
       </div>
-    </div>
-  </body>
+      <div class="divide-screen">
+        <div class="left-hand"></div>
+        <div class="right-hand">
+          <form id="form">
+            <section class="log">
+              <h2>Log In</h2>
+            </section>
+            <div class="input-contain email">
+              <label for="email" class="form__control"
+                >Email
+                <input id="email" name="email" type="email" />
+                <img
+                  src="./img/icon-error.svg"
+                  alt="error-icon"
+                  class="icon__email"
+                />
+                <small class="small__email"
+                  >Looks like this is not an email</small
+                >
+              </label>
+            </div>
+            <div class="input-contain password">
+              <label class="form__control" for="password"
+                >Password
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Must be at least 6 letters"
+                />
+                <img
+                  src="./img/icon-error.svg"
+                  alt="error-icon"
+                  class="icon__password"
+                />
+                <small class="small__password"
+                  >Looks like this is not an password</small
+                >
+              </label>
+            </div>
+            <button class="login-btn" type="submit">Log In</button>
+            <section class="copy legal">
+              <p><span class="pw">Forgotten your password?</span></p>
+              <p>
+                <span class="pw"
+                  >New Member?
+                  <a href="signup.html">SignUp</a>
+                </span>
+              </p>
+            </section>
+            <div class="back"><a href="index.html">Back to home</a></div>
+          </form>
+        </div>
+      </div>
+      <script src="./js/login.js"></script>
+    </body>
 </html>

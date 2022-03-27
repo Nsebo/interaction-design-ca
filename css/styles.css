@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
   --light-blue: #e7f3f9;
@@ -34,7 +34,7 @@ img {
 body {
   background-color: var(--light-blue);
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
 }
 
@@ -42,17 +42,8 @@ a {
   text-decoration: none;
 }
 
-header {
-  background-image: url(../img/game-hub.png);
-  background-size: cover;
-  background-position-y: center;
-  height: 85vh;
-}
-
 .nav__bar img {
   margin-top: 1rem;
-  width: 8rem;
-  height: 6rem;
 }
 
 .nav__bar,
@@ -63,7 +54,9 @@ header {
 }
 
 .nav__bar {
+  background-color: #a9a9a9;
   justify-content: space-around;
+  height: 150px;
 }
 
 .nav__items h2 {
@@ -77,10 +70,12 @@ header {
   list-style: none;
   margin: 1rem 1rem 0;
   font-size: 1.5rem;
+  background-color: #fff;
+  padding: 5px;
 }
 
 .nav__items ul li a {
-  color: var(--light-blue);
+  color: #1f1f1f;
   font-weight: 400;
   margin-bottom: 0.4rem;
 }
@@ -88,7 +83,7 @@ header {
 .btn {
   margin: 1rem 1rem 0 0;
   padding: 1rem 2rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
   border: none;
   transition: all 0.3s ease-in;
 }
@@ -123,18 +118,25 @@ button.btn-cta {
 }
 
 .hero {
+  background-image: url(../img/game-controller.jpg);
+  background-size: cover;
+  background-position-y: center;
+  height: 80vh;
+}
+
+.headings {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10rem auto;
-}
-
-.headings {
+  margin: 0 auto;
   text-align: center;
   color: var(--light-blue);
   width: 60%;
-  margin: 1rem auto;
+}
+
+.heading__wrapper {
+  margin: 25rem 0;
 }
 
 .headings h1 {
@@ -144,7 +146,7 @@ button.btn-cta {
 }
 
 .headings p {
-  margin: 1.5rem;
+  margin: 2rem;
   font-size: 1.5rem;
   opacity: 0.8;
 }
@@ -297,6 +299,34 @@ button.btn-cta {
 
 .hover-right .left {
   width: var(--other-width);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: darkgrey;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer .footer__logo {
+  margin-top: 3rem;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+footer .social__icon {
+  margin-top: 3rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 800px) {

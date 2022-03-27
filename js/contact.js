@@ -9,8 +9,7 @@ const name = id('name'),
   form = id('form'),
   errorMsg = classes('error'),
   successIcon = classes('success-icon'),
-  failureIcon = classes('failure-icon'),
-  successMessage = classes('success-message');
+  failureIcon = classes('failure-icon');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -30,6 +29,5 @@ const engine = (id, serial, message) => {
     errorMsg[serial].innerHTML = '';
     failureIcon[serial].style.opacity = '0';
     successIcon[serial].style.opacity = '1';
-    // successMessage.classList.add('success');
   }
 };

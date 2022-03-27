@@ -22,6 +22,11 @@
     />
   </head>
   <body>
+    <div class="thanks">
+      <h1>Thanks for signing up.</h1>
+      <p>Check your email for further information</p>
+      <a href="./index.html">Click here to go back home</a>
+    </div>
     <div class="split-screen">
       <div class="left">
         <section class="copy">
@@ -30,7 +35,7 @@
         </section>
       </div>
       <div class="right">
-        <form>
+        <form id="form">
           <section class="copy">
             <h2>Sign up</h2>
             <div class="login-container">
@@ -40,23 +45,50 @@
               </p>
             </div>
           </section>
+
           <div class="input-container name">
-            <label for="fname">Full Name</label>
-            <input id="fname" name="fname" type="text" />
+            <label for="fname"
+              >Full Name
+              <input id="fname" name="fname" type="text" class="fullname" />
+              <img
+                class="icon__fullname"
+                src="./img/icon-error.svg"
+                alt="error-icon"
+              />
+              <small class="small__fullname">First Name cannot be empty</small>
+            </label>
           </div>
           <div class="input-container email">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" />
+            <label for="email"
+              >Email<input id="email" name="email" type="email" />
+              <img
+                src="./img/icon-error.svg"
+                alt="error-icon"
+                class="icon__email"
+              />
+              <small class="small__email"
+                >Looks like this is not an email</small
+              >
+            </label>
           </div>
           <div class="input-container password">
-            <label for="password">Password</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              placeholder="Must be at least 6 letters"
-            />
-            <i class="far fa-eye-slash"></i>
+            <label class="form__control" for="password"
+              >Password
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Must be at least 6 letters"
+              />
+              <img
+                src="./img/icon-error.svg"
+                alt="error-icon"
+                class="icon__password"
+              />
+              <small class="small__password"
+                >Looks like this is not an password</small
+              >
+            </label>
           </div>
 
           <div class="input-container cta">
@@ -75,10 +107,11 @@
                 >&amp; <a href="#"> Terms and Condition</a></span
               >
             </p>
-            <a class="back" href="index.html">Back to home</a>
           </section>
+          <div class="back"><a href="index.html">Back to home</a></div>
         </form>
       </div>
     </div>
+    <script src="./js/signup.js"></script>
   </body>
 </html>
