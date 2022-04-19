@@ -96,15 +96,15 @@ function displayCart() {
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += `
       <div class="product">
-      <ion-icon name="close-circle"></ion-icon>
+      <i class="fa-solid fa-circle-xmark"></i>
       <img src="./img/${item.tag}.jpg">
       <span>${item.name}</span>
       </div>
       <div class="price">$${item.price},00</div>
       <div class="quantity">
-      <ion-icon class="decrease" name="arrow-dropleft-circle"></ion-icon>
+      <i class="fa-solid fa-circle-chevron-left"></i>
       <span>${item.inCart}</span>
-      <ion-icon class="increase" name="arrow-dropright-circle"></ion-icon>
+      <i class="fa-solid fa-circle-chevron-right"></i>
       </div>
       <div class="total">  
       $${item.inCart * item.price},00
@@ -125,10 +125,11 @@ function displayCart() {
   }
 
   deleteButtons();
+  manageQuantity();
 }
 
 function deleteButtons() {
-  let deleteButtons = document.querySelectorAll('.product ion-icon');
+  let deleteButtons = document.querySelectorAll('.product i');
   let productName;
   let productNumbers = localStorage.getItem('cartNumbers');
   let cartItems = localStorage.getItem('productsInCart');
@@ -142,10 +143,9 @@ function deleteButtons() {
         .toLowerCase()
         .replace(/ /g, '');
       localStorage.setItem(
-        'cartNumbers',
+        'cartNumber',
         productNumbers - cartItems[productName].inCart
       );
-
       localStorage.setItem(
         'totalCost',
         cartCost - cartItems[productName].price * cartItems[productName].inCart
@@ -153,11 +153,21 @@ function deleteButtons() {
 
       delete cartItems[productName];
       localStorage.setItem('productsInCart', JSON.stringify(cartItems));
-
       displayCart();
       onLoadCartNumbers();
     });
   }
 }
+
+function manageQuantity() {
+  let decreaseButtons = document.querySelectorAll('.decrease');
+  let increaseButtons = document.querySelectorAll('.increase');
+  for (let i = 0; i < decreaseButtons.length; i++) {
+    decreaseButtons[i].addEventListener('click', () => {
+      console.log('decreased button');
+    });
+  }
+}
+
 onLoadCartNumbers();
 displayCart();
