@@ -10,8 +10,11 @@
     />
     <meta name="author" content="Uzochukwu Cecilia Oloh- Nsebo" />
     <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/product.css" />
     <title>Cart || GameHub</title>
@@ -63,21 +66,22 @@
   </head>
   <body>
     <header>
-      <div class="overlay"></div>
-      <nav>
-        <div class="logo">
-          <img src="./img/game-hub-Logo.png" alt="logo of game hub" />
+      <nav class="nav__bar">
+        <img src="./img/game-hub-logo.png" />
+        <div class="nav__items">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="cart">
+              <a href="cart.html"
+                ><i class="fa-solid fa-cart-shopping"></i>Cart <span>0</span></a
+              >
+            </li>
+          </ul>
         </div>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Store</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="cart">
-            <a href="cart.html"
-              ><ion-icon name="basket"></ion-icon>Cart <span>0</span></a
-            >
-          </li>
-        </ul>
       </nav>
     </header>
     <div class="products-container">
@@ -90,7 +94,29 @@
       <div class="products"></div>
     </div>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <footer>
+      <div class="footer__logo">
+        <img src="./img/game-hub-Logo.png" alt="logo" />
+      </div>
+      <div class="footer__contact">
+        <div class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <p>+4747960268</p>
+        </div>
+        <div class="address">
+          <i class="fa-solid fa-house-user"></i>
+          <p>Micheletveien 36 B Oslo, 1053 Norway</p>
+        </div>
+      </div>
+      <div class="social__icon">
+        <i class="fa-brands fa-facebook"></i>
+        <p>facebook</p>
+        <i class="fa-brands fa-twitter"></i>
+        <p>twitter</p>
+        <i class="fa-brands fa-github"></i>
+        <p>github</p>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

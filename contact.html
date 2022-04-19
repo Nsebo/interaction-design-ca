@@ -9,13 +9,12 @@
     <title>Contact Page || GameHub </title>
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/product.css">
     <script src="js/contact.js" defer ></script>
     <!-- Hotjar Tracking Code for my site -->
 <script>
@@ -40,23 +39,20 @@
   </head>
   <body>
     <header>
-      <div class="overlay"></div>
-      <nav>
-        <div class="logo">
-          <img src="./img/game-hub-Logo.png" alt="logo of gamehub" />
+      <nav class="nav__bar">
+        <img src="./img/game-hub-logo.png" />
+        <div class="nav__items">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
         </div>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Store</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
       </nav>
     </header>
     <body>
-      <div class="container">
-        <div class="content">
-          <div class="image"></div>
-        </div>
         <form id="form">
           <div>
             <label for="name">Name</label>
@@ -115,5 +111,28 @@
           <button type="submit" id="submit">Submit</button>
         </form>
       </div>
+      <footer>
+        <div class="footer__logo">
+          <img src="./img/game-hub-Logo.png" alt="logo" />
+        </div>
+        <div class="footer__contact">
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <p>+4747960268</p>
+          </div>
+          <div class="address">
+            <i class="fa-solid fa-house-user"></i>
+            <p>Micheletveien 36 B Oslo, 1053 Norway</p>
+          </div>
+        </div>
+        <div class="social__icon">
+          <i class="fa-brands fa-facebook"></i>
+          <p>facebook</p>
+          <i class="fa-brands fa-twitter"></i>
+          <p>twitter</p>
+          <i class="fa-brands fa-github"></i>
+          <p>github</p>
+        </div>
+      </footer>
     </body>
   </html>
