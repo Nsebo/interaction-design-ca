@@ -20,13 +20,13 @@ let products = [
     inCart: 0,
   },
   {
-    name: 'Keypad',
-    tag: 'keypad',
+    name: 'Colorful gamepad',
+    tag: 'game',
     price: 65,
     inCart: 0,
   },
   {
-    name: 'keypad game',
+    name: 'Colorful gamepad',
     tag: 'game',
     price: 65,
     inCart: 0,
