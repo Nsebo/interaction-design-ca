@@ -8,8 +8,6 @@ for (let but of add) {
     cart.setAttribute('data-count', item + 1);
     cart.classList.add('on');
 
-    // image animated to cart
-
     let parent = e.target.parentNode.parentNode.parentNode;
     let image = parent.querySelector('img');
     let span = document.createElement('span');
@@ -23,8 +21,6 @@ for (let but of add) {
       span.classList.remove('active');
       span.removeChild(s_image);
     }, 500);
-
-    // copy and paste
 
     let clone = parent.cloneNode(true);
     clone.querySelector('.add').style.display = 'none';

@@ -19,6 +19,18 @@ let products = [
     price: 65,
     inCart: 0,
   },
+  {
+    name: 'Keypad',
+    tag: 'keypad',
+    price: 65,
+    inCart: 0,
+  },
+  {
+    name: 'keypad game',
+    tag: 'game',
+    price: 65,
+    inCart: 0,
+  },
 ];
 
 for (let i = 0; i < carts.length; i++) {
