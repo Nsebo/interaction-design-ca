@@ -14,7 +14,7 @@ let products = [
     inCart: 0,
   },
   {
-    name: 'Xbox one ',
+    name: 'Xbox Series S ',
     tag: 'xbox',
     price: 65,
     inCart: 0,
@@ -26,13 +26,13 @@ let products = [
     inCart: 0,
   },
   {
-    name: 'Colorful game',
+    name: 'Colorful keypad game',
     tag: 'game',
     price: 65,
     inCart: 0,
   },
 ];
-
+console.log(products);
 for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener('click', () => {
     cartNumbers(products[i]);
