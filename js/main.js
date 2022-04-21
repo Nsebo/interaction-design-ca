@@ -20,7 +20,7 @@ let products = [
     inCart: 0,
   },
   {
-    name: 'Gaming pad',
+    name: 'Gaming keypad',
     tag: 'game',
     price: 65,
     inCart: 0,
