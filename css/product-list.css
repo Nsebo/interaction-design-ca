@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --border: #c4c4c4;
+  --background: #fff;
+  --white: #fff;
+  --royal-blue: #4169e1;
+  --dark-grey: #a9a9a9;
+  --blue: #0000ff;
+  --box-shadow: #0000001a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--light-blue);
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__bar img {
+  margin-top: 1rem;
+}
+
+.nav__bar,
+.nav__items,
+.nav__items ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav__bar {
+  background-color: #a9a9a9;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.nav__items h2 {
+  margin: 1rem 5rem 0.5rem 0;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: var(--light-blue);
+}
+
+.nav__items ul li {
+  list-style: none;
+  margin: 1rem 1rem 0;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.nav__items ul li a {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+
+.cart i {
+  vertical-align: bottom;
+  font-size: 15px;
+  padding-right: 5px;
+}
+.cart a {
+  color: var(--white);
+  cursor: pointer;
+  margin: 15px;
+  text-decoration: none;
+}
+
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: var(--dark-grey);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  margin: 8rem auto;
+}
+.card {
+  background-color: #f0f8ff;
+  margin: 1rem;
+  padding: 3rem;
+  width: 50%;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+div .heading {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.card p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #090808;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer .footer__logo {
+  margin-top: 3rem;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+footer .social__icon {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
