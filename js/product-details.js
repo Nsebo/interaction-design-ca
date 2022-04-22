@@ -1,28 +1,26 @@
-const querySelector = document.location.search;
+var MenuItems = document.getElementById('MenuItems');
+MenuItems.style.maxHeight = '0px';
 
-const params = new URLSearchParams(querySelector);
-const id = params.get('id');
-const API_URL = `https://nsebonkili.flywheelsites.com/wp-json/wc/store/products/${id}`;
-
-const productDetails = document.querySelector('.product-details');
-
-let thumbnail =
-  'https://nsebonkili.flywheelsites.com/wp-content/uploads/2022/04/gaming-pad-324x324.webp';
-
-async function getProductDetails() {
-  try {
-    const response = await fetch(API_URL);
-    const singleProductDetails = await response.json();
-    thumbnail += `${singleProductDetails.thumbnail}`;
-    productDetails.innerHTML += `
-     <div class="container">
-     <img src="${thumbnail}" alt"keypad image"/>
-     <div class="content">
-     <h2>Name: ${singleProductDetails.name}</h2>
-     <p>Description: ${singleProductDetails.description}</p>
-     </div>
-     </div>
-     `;
-  } catch (e) {}
+function menutoggle() {
+  if (MenuItems.style.maxHeight == '0px') {
+    MenuItems.style.maxHeight = '200px';
+  } else {
+    MenuItems.style.maxHeight = '0px';
+  }
 }
-getProductDetails();
+var ProductImg = document.getElementById('ProductImg');
+
+var SmallImg = document.getElementsByClassName('small-img');
+
+SmallImg[0].onclick = function () {
+  ProductImg.src = SmallImg[0].src;
+};
+SmallImg[1].onclick = function () {
+  ProductImg.src = SmallImg[1].src;
+};
+SmallImg[2].onclick = function () {
+  ProductImg.src = SmallImg[2].src;
+};
+SmallImg[3].onclick = function () {
+  ProductImg.src = SmallImg[3].src;
+};

@@ -9,15 +9,17 @@
       content="home, page,what we do, playstation 5,xbox series x,"
     />
     <meta name="author" content="Uzochukwu Cecilia Oloh- Nsebo" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/script.js" defer></script>
+
     <title>Home || GameHub</title>
     <!-- Hotjar Tracking Code for my site -->
     <script>
@@ -50,89 +52,213 @@
       gtag('config', 'G-EG63SKS423');
     </script>
   </head>
-  <header>
-    <nav class="nav__bar">
-      <img src="./img/game-hub-logo.png" />
-      <div class="nav__items">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Store</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="nav__buttons">
-        <button class="btn btn__white"><a href="login.html">Login</a></button>
-        <button class="btn btn__black">
-          <a href="signup.html">Register</a>
-        </button>
-      </div>
-    </nav>
-  </header>
   <body>
-    <div class="hero">
-      <div class="headings">
-        <div class="heading__wrapper">
-          <h1>Game Hub</h1>
-          <p>
-            An Arena for top and trending games for both Console, PC and Mobile.
-            Satisfy your gaming needs here
-          </p>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="/img/game-hub-Logo.png" width="125px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img src="/img/cart.png" width="30px" height="30px"
+          /></a>
+          <img src="/img/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              GameHub
+              <br />
+              The Universe of games
+            </h1>
+            <p>
+              An Arena for top and trending games for both Console, PC and
+              Mobile.
+              <br />
+              Satisfy your gaming needs here
+            </p>
+            <a href="product.html" class="btn">Buy Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="/img/controller.png" />
+          </div>
         </div>
       </div>
     </div>
-    <div class="heading__secondary">
-      <h2>What We Do</h2>
-    </div>
-    <div class="boxes">
-      <div class="box box__1">
-        <i class="fa-solid fa-money-bill-1"></i>
-        <h2>We Sell</h2>
-        <p>Get all your trending games a click away</p>
-      </div>
-      <div class="box box__2">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <h2>We Buy</h2>
-        <p>We also purchase games of all kinds</p>
-      </div>
-      <div class="box box__3">
-        <i class="fa-solid fa-gamepad"></i>
-        <h2>We Play</h2>
-        <p>Get to play your favourite games online</p>
+    <!----- featured categories------->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="/img/xbox.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="/img/keyboard.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="/img/pad.jpg" />
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div class="split left">
-        <h1>Playstation 5</h1>
-        <a href="product.html" class="btn">Buy Now</a>
+    <!----- featured products------->
+
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/controller.png" /></a>
+          <h4><a href="product-details.html">White game controller</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/keypad.jpg" /></a>
+          <h4>Black gaming keypad</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/keyboard.jpg" /></a>
+          <h4>Colorful gaming keyboard</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/xbox.jpg" /></a>
+          <h4>White xbox series s</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
       </div>
-      <div class="split right">
-        <h1>XBox Series X</h1>
-        <a href="product.html" class="btn">Buy Now</a>
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/keyboard.jpg" /></a>
+          <h4>Colorful gaming keyboard</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/keypad.jpg" /></a>
+          <h4>Black gaming keypad</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/xbox.jpg" /></a>
+          <h4>White xbox series s</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <a href="product-details.html"><img src="img/pad.jpg" /></a>
+          <h4>Gaming pad</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
       </div>
     </div>
 
-    <footer>
-      <div class="footer__logo">
-        <img src="./img/game-hub-Logo.png" alt="logo" />
-      </div>
-      <div class="footer__contact">
-        <div class="phone">
-          <i class="fa-solid fa-phone"></i>
-          <p>+4747960268</p>
+    <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="/img/play-store.png" />
+              <img src="/img/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="/img/game-hub-Logo.png" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              games Accessible to Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Home</li>
+              <li>Product</li>
+              <li>Contact</li>
+              <li>Shop</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
         </div>
-        <div class="address">
-          <i class="fa-solid fa-house-user"></i>
-          <p>Micheletveien 36 B Oslo, 1053 Norway</p>
-        </div>
+        <hr />
+        <p class="copyright">Copyright 2020 -Nsebo</p>
       </div>
-      <div class="social__icon">
-        <i class="fa-brands fa-facebook"></i>
-        <p>Facebook</p>
-        <i class="fa-brands fa-twitter"></i>
-        <p>Twitter</p>
-        <i class="fa-brands fa-github"></i>
-        <p>GitHub</p>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>

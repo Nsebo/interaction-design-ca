@@ -2,12 +2,6 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [
   {
-    name: 'Gaming Mouse',
-    tag: 'mouse',
-    price: 50,
-    inCart: 0,
-  },
-  {
     name: 'Gaming Pad',
     tag: 'pad',
     price: 55,
@@ -21,13 +15,13 @@ let products = [
   },
   {
     name: 'Gaming keypad',
-    tag: 'game',
+    tag: 'keypad',
     price: 65,
     inCart: 0,
   },
   {
-    name: 'Colorful keypad game',
-    tag: 'game',
+    name: 'Colorful gamer keyboard',
+    tag: 'keyboard',
     price: 65,
     inCart: 0,
   },

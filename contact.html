@@ -14,6 +14,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="js/contact.js" defer ></script>
     <!-- Hotjar Tracking Code for my site -->
@@ -37,21 +38,27 @@
   gtag('config', 'G-EG63SKS423');
 </script>
   </head>
-  <body>
-    <header>
-      <nav class="nav__bar">
-        <img src="./img/game-hub-logo.png" />
-        <div class="nav__items">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Store</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="signup.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
-        </div>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="/img/game-hub-Logo.png" width="125px"
+        /></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
       </nav>
-    </header>
+      <a href="cart.html"
+        ><img src="/img/cart.png" width="30px" height="30px"
+      /></a>
+      <img src="/img/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+  </div>
     <body>
         <form id="form">
           <div>
@@ -111,28 +118,47 @@
           <button type="submit" id="submit">Submit</button>
         </form>
       </div>
-      <footer>
-        <div class="footer__logo">
-          <img src="./img/game-hub-Logo.png" alt="logo" />
-        </div>
-        <div class="footer__contact">
-          <div class="phone">
-            <i class="fa-solid fa-phone"></i>
-            <p>+4747960268</p>
+      <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="/img/play-store.png" />
+              <img src="/img/app-store.png" />
+            </div>
           </div>
-          <div class="address">
-            <i class="fa-solid fa-house-user"></i>
-            <p>Micheletveien 36 B Oslo, 1053 Norway</p>
+          <div class="footer-col-2">
+            <img src="/img/game-hub-Logo.png" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible ot Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Posts</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
           </div>
         </div>
-        <div class="social__icon">
-          <i class="fa-brands fa-facebook"></i>
-          <p>Facebook</p>
-          <i class="fa-brands fa-twitter"></i>
-          <p>Twitter</p>
-          <i class="fa-brands fa-github"></i>
-          <p>GitHub</p>
-        </div>
-      </footer>
+        <hr />
+        <p class="copyright">Copyright 2020 -Nsebo</p>
+      </div>
+    </div>
     </body>
   </html>

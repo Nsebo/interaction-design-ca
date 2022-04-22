@@ -10,13 +10,15 @@
     />
     <meta name="author" content="Uzochukwu Cecilia Oloh- Nsebo" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
     <title>Cart || GameHub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- Hotjar Tracking Code for my site -->
@@ -65,56 +67,142 @@
     </script>
   </head>
   <body>
-    <header>
-      <nav class="nav__bar">
-        <img src="./img/game-hub-logo.png" />
-        <div class="nav__items">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Store</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="cart">
-              <a href="cart.html"
-                ><i class="fa-solid fa-cart-shopping"></i>Cart <span>0</span></a
-              >
-            </li>
-          </ul>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="/img/game-hub-Logo.png" width="125px"
+          /></a>
         </div>
-      </nav>
-    </header>
-    <div class="products-container">
-      <div class="product-header">
-        <h5 class="product-title">PRODUCT</h5>
-        <h5 class="price">PRICE</h5>
-        <h5 class="quantity">QUANTITY</h5>
-        <h5 class="total">TOTAL</h5>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="/img/cart.png" width="30px" height="30px"
+        /></a>
+        <img src="/img/menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>
-      <div class="products"></div>
     </div>
 
-    <footer>
-      <div class="footer__logo">
-        <img src="./img/game-hub-Logo.png" alt="logo" />
+    <!--------------Cart Items details--------------->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/controller.png" />
+              <div>
+                <p>White Controller</p>
+                <small>Price: $50.00</small><br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/keypad.jpg" />
+              <div>
+                <p>Black gaming pad</p>
+                <small>Price: $75.00</small><br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$75.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/xbox.jpg" />
+              <div>
+                <p>White xbox series s</p>
+                <small>Price: $75.00</small><br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$75.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$35.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$235.00</td>
+          </tr>
+        </table>
       </div>
-      <div class="footer__contact">
-        <div class="phone">
-          <i class="fa-solid fa-phone"></i>
-          <p>+4747960268</p>
+      <div class="total-price">
+        <a href="#" class="btn">Proceed to checkout &#8594;</a>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="/img/play-store.png" />
+              <img src="/img/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="/img/logo-white.png" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible ot Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Home</li>
+              <li>Product</li>
+              <li>Contact</li>
+              <li>Shop</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
         </div>
-        <div class="address">
-          <i class="fa-solid fa-house-user"></i>
-          <p>Micheletveien 36 B Oslo, 1053 Norway</p>
-        </div>
+        <hr />
+        <p class="copyright">Copyright 2020 -Nsebo</p>
       </div>
-      <div class="social__icon">
-        <i class="fa-brands fa-facebook"></i>
-        <p>Facebook</p>
-        <i class="fa-brands fa-twitter"></i>
-        <p>Twitter</p>
-        <i class="fa-brands fa-github"></i>
-        <p>GitHub</p>
-      </div>
-    </footer>
-    <script src="js/main.js"></script>
+    </div>
   </body>
 </html>
