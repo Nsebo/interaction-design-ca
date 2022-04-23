@@ -25,6 +25,12 @@ let products = [
     price: 65,
     inCart: 0,
   },
+  {
+    name: 'White controller',
+    tag: 'controller',
+    price: 65,
+    inCart: 0,
+  },
 ];
 console.log(products);
 for (let i = 0; i < carts.length; i++) {
