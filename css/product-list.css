@@ -1,0 +1,16 @@
+.card {
+  background-color: #f0f8ff;
+  margin: 1rem;
+  padding: 3rem;
+  width: 50%;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+div .heading {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.card p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
