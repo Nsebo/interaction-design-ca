@@ -1,14 +1,3 @@
-var MenuItems = document.getElementById('MenuItems');
-MenuItems.style.maxHeight = '0px';
-
-function menutoggle() {
-  if (MenuItems.style.maxHeight == '0px') {
-    MenuItems.style.maxHeight = '200px';
-  } else {
-    MenuItems.style.maxHeight = '0px';
-  }
-}
-
 const API_URL =
   'https://imaginary-growler.flywheelsites.com/wp-json/wc/store/products';
 const productsContainer = document.querySelector('.results');
@@ -22,7 +11,7 @@ async function getGamehubProducts() {
       productsContainer.innerHTML += `
      <div class="card">
      <div class="heading">
-     <a href="product-details.html?id=${productsData[i].id}"><strong> ProductName: ${productsData[i].name}</strong></a>
+     <a href="product-details.html?id=${productsData[i].id}"><strong> Product Name: ${productsData[i].name}</strong></a>
      </div>
      <p>Description : ${productsData[i].description}</p>
      <p>Id : ${productsData[i].id}</p>
