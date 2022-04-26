@@ -1,6 +1,6 @@
 const resultsContainer = document.querySelector('.results');
 const URL =
-  'https://imaginary-growler.flywheelsites.com/wp-json/wc/store/products';
+  'https://nsebonkili-9438ad.ingress-alpha.easywp.com/wp-json/wc/store/products';
 
 // my proxy server
 const proxy = 'https://noroffcors.herokuapp.com/';

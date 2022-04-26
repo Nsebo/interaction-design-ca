@@ -1,5 +1,5 @@
 const API_URL =
-  'https://imaginary-growler.flywheelsites.com/wp-json/wc/store/products';
+  'https://nsebonkili-9438ad.ingress-alpha.easywp.com/wp-json/wc/store/products';
 const productsContainer = document.querySelector('.results');
 async function getGamehubProducts() {
   try {
