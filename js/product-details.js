@@ -28,6 +28,17 @@ async function getGameDetails() {
         singleGameDetails = allGameDetails[i];
       }
     }
+    gameDetails.innerHTML += `
+    <div class="container">
+ <div class="content">
+ <img src="${singleGameDetails.images}">
+ <h3>Title: ${singleGameDetails.name}</h3>
+ <p>Description: ${singleGameDetails.description}</p>
+ <p>Average _rating: ${singleGameDetails.average_rating}</p>
+ <p>Id: ${singleGameDetails.id}</p>
+ </div>
+    </div>
+    `;
     console.log(singleGameDetails);
   } catch (error) {}
 }
