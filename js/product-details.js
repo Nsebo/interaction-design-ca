@@ -31,7 +31,7 @@ async function getGameDetails() {
     gameDetails.innerHTML += `
     <div class="container">
  <div class="content">
- <img src="${singleGameDetails.images}">
+ <img src="${singleGameDetails.images[0].src}">
  <h3>Title: ${singleGameDetails.name}</h3>
  <p>Description: ${singleGameDetails.description}</p>
  <p>Average _rating: ${singleGameDetails.average_rating}</p>
